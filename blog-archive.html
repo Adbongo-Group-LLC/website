@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Blog Archive — Adbongo Group LLC</title>
+  <meta name="description" content="Legacy blog archive from 2010-2012. Sustainable business consulting, organic business development, and social enterprise philosophy." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=VT323&display=swap" rel="stylesheet" />
+  <style>
+    :root {
+      --bg: #0f380f;
+      --bg-deep: #0a2a0a;
+      --surface: #306230;
+      --surface-2: #8bac0f;
+      --border: #9bbc0f;
+      --text: #e0f8d0;
+      --muted: #9bbc0f;
+      --primary: #9bbc0f;
+      --primary-dim: #8bac0f;
+      --accent: #f7d51d;
+      --max: 72rem;
+      --shadow: 4px 4px 0 #000000;
+      --font-pixel: "Press Start 2P", monospace;
+      --font-body: VT323, "Courier New", monospace;
+    }
+    html {
+      color-scheme: dark;
+      scroll-behavior: smooth;
+      image-rendering: pixelated;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: var(--font-body);
+      font-size: 1.35rem;
+      line-height: 1.6;
+      color: var(--text);
+      background: var(--bg);
+      min-height: 100vh;
+    }
+    .wrap {
+      max-width: var(--max);
+      margin: 0 auto;
+      padding: 0 1rem;
+    }
+    header {
+      background: var(--bg-deep);
+      border-bottom: 4px solid #000;
+      padding: 1rem 0;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+    }
+    .nav {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 1rem;
+    }
+    .logo {
+      text-decoration: none;
+      color: var(--text);
+      font-family: var(--font-pixel);
+      font-size: 0.7rem;
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+    }
+    .logo:hover { color: var(--accent); }
+    main {
+      padding: 2rem 0 4rem;
+    }
+    h1 {
+      font-family: var(--font-pixel);
+      font-size: 1.5rem;
+      color: var(--accent);
+      margin-bottom: 1rem;
+      text-shadow: 2px 2px 0 #000;
+    }
+    .archive-intro {
+      background: var(--surface);
+      border: 4px solid #000;
+      box-shadow: var(--shadow);
+      padding: 1.5rem;
+      margin-bottom: 2rem;
+    }
+    .archive-intro p {
+      margin-bottom: 0.75rem;
+      font-size: 1.25rem;
+    }
+    .filter-tabs {
+      display: flex;
+      gap: 0.5rem;
+      margin-bottom: 2rem;
+      flex-wrap: wrap;
+    }
+    .filter-tab {
+      background: var(--surface);
+      border: 3px solid #000;
+      padding: 0.5rem 1rem;
+      font-family: var(--font-pixel);
+      font-size: 0.5rem;
+      color: var(--text);
+      cursor: pointer;
+      transition: all 0.1s;
+    }
+    .filter-tab:hover,
+    .filter-tab.active {
+      background: var(--primary);
+      color: var(--bg-deep);
+      box-shadow: var(--shadow);
+    }
+    .blog-list {
+      display: grid;
+      gap: 1.5rem;
+    }
+    .blog-card {
+      background: var(--surface);
+      border: 4px solid #000;
+      box-shadow: var(--shadow);
+      padding: 1.5rem;
+      transition: transform 0.1s;
+    }
+    .blog-card:hover {
+      transform: translate(-2px, -2px);
+      box-shadow: 6px 6px 0 #000;
+    }
+    .blog-meta {
+      font-family: var(--font-pixel);
+      font-size: 0.5rem;
+      color: var(--muted);
+      margin-bottom: 0.75rem;
+    }
+    .blog-title {
+      font-family: var(--font-pixel);
+      font-size: 0.75rem;
+      color: var(--accent);
+      margin-bottom: 0.75rem;
+      line-height: 1.4;
+    }
+    .blog-excerpt {
+      font-size: 1.2rem;
+      color: var(--text);
+      margin-bottom: 1rem;
+      line-height: 1.5;
+    }
+    .blog-link {
+      display: inline-block;
+      background: var(--primary);
+      color: var(--bg-deep);
+      padding: 0.5rem 1rem;
+      font-family: var(--font-pixel);
+      font-size: 0.5rem;
+      text-decoration: none;
+      border: 3px solid #000;
+      box-shadow: 2px 2px 0 #000;
+    }
+    .blog-link:hover {
+      background: var(--accent);
+      transform: translate(-1px, -1px);
+      box-shadow: 3px 3px 0 #000;
+    }
+    .year-group {
+      margin-bottom: 2rem;
+    }
+    .year-header {
+      font-family: var(--font-pixel);
+      font-size: 1rem;
+      color: var(--primary);
+      margin-bottom: 1rem;
+      padding-bottom: 0.5rem;
+      border-bottom: 3px solid var(--primary);
+    }
+    footer {
+      background: var(--bg-deep);
+      border-top: 4px solid #000;
+      padding: 2rem 0;
+      margin-top: 4rem;
+      text-align: center;
+      font-size: 1rem;
+    }
+    footer a {
+      color: var(--primary);
+      text-decoration: none;
+    }
+    footer a:hover {
+      color: var(--accent);
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="wrap nav">
+      <a class="logo" href="/">← Back to Adbongo</a>
+    </div>
+  </header>
+
+  <main>
+    <div class="wrap">
+      <h1>📚 Blog Archive (2010-2012)</h1>
+      
+      <div class="archive-intro">
+        <p><strong>Legacy content from the early days of Adbongo.</strong></p>
+        <p>These posts document our journey in sustainable business consulting, organic business development, and social enterprise philosophy from 2010-2012.</p>
+        <p>Topics: Sustainability · Permaculture · Business Development · Marketing · Social Enterprise</p>
+      </div>
+
+      <div class="filter-tabs">
+        <button class="filter-tab active" onclick="filterYear('all')">All Posts (23)</button>
+        <button class="filter-tab" onclick="filterYear('2012')">2012</button>
+        <button class="filter-tab" onclick="filterYear('2011')">2011</button>
+        <button class="filter-tab" onclick="filterYear('2010')">2010</button>
+      </div>
+
+      <div class="blog-list" id="blog-list">
+        <!-- Posts will be loaded here by JavaScript -->
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <div class="wrap">
+      <p>Adbongo Group LLC · Est. 2007 · <a href="/">adbongo.ai</a></p>
+    </div>
+  </footer>
+
+  <script>
+    const posts = [
+      { date: '2012-10-08', title: 'Free Growth Kit', year: '2012', excerpt: 'Comprehensive business growth resources and tools...' },
+      { date: '2011-08-01', title: 'Building the new economy', year: '2011', excerpt: 'Vision for sustainable economic systems...' },
+      { date: '2011-07-19', title: 'How do you market a cause eco-system?', year: '2011', excerpt: 'Marketing strategies for social enterprises...' },
+      { date: '2011-07-15', title: 'New Austin Office', year: '2011', excerpt: 'Expanding operations to Austin, Texas...' },
+      { date: '2011-06-10', title: 'New service for entrepreneurs', year: '2011', excerpt: 'Launch of new consulting services...' },
+      { date: '2011-06-03', title: 'The progressive capitalist', year: '2011', excerpt: 'Balancing profit with purpose...' },
+      { date: '2011-05-31', title: 'Calling all time benders', year: '2011', excerpt: 'Optimizing time management for entrepreneurs...' },
+      { date: '2011-05-03', title: 'Spiral dynamics', year: '2011', excerpt: 'Understanding organizational evolution...' },
+      { date: '2011-04-23', title: 'Earth day', year: '2011', excerpt: 'Celebrating sustainability and environmental responsibility...' },
+      { date: '2011-04-21', title: 'Building the new Economy', year: '2011', excerpt: 'Framework for sustainable business models...' },
+      { date: '2011-03-18', title: 'Organic Business Development is Permaculture', year: '2011', excerpt: 'Applying permaculture principles to business growth...' },
+      { date: '2011-03-13', title: 'Argument for sustainability', year: '2011', excerpt: 'Why sustainable practices make business sense...' },
+      { date: '2011-01-20', title: 'Common issues with start ups businesses', year: '2011', excerpt: 'Challenges facing new entrepreneurs and solutions...' },
+      { date: '2010-11-14', title: 'Advanced Thermal Conversion Plants', year: '2010', excerpt: 'Innovative waste-to-energy technologies...' },
+      { date: '2010-11-01', title: 'Why advertise in a depression?', year: '2010', excerpt: 'Marketing strategies during economic downturns...' },
+      { date: '2010-09-22', title: 'The Sustainable Business ACCELERATOR', year: '2010', excerpt: 'Program for accelerating sustainable business growth...' },
+      { date: '2010-09-05', title: 'Need help orchestrating your symphony?', year: '2010', excerpt: 'Coordinating complex business operations...' },
+      { date: '2010-09-01', title: 'Organic Business Consulting', year: '2010', excerpt: 'Natural approach to business development...' },
+      { date: '2010-08-16', title: 'Marketing Help for Companies in Farmers Branch', year: '2010', excerpt: 'Local marketing services and support...' },
+      { date: '2010-08-14', title: 'How to brand your idea', year: '2010', excerpt: 'Building a strong brand identity from scratch...' },
+      { date: '2010-04-15', title: "Last Minute Filing Tips: Don't miss the deadline", year: '2010', excerpt: 'Tax filing advice for small businesses...' },
+      { date: '2010-02-09', title: 'social media short & tweet', year: '2010', excerpt: 'Early thoughts on social media marketing...' },
+      { date: '2010-02-04', title: 'What the *#$% does Adbongo mean?', year: '2010', excerpt: 'Origin story of the Adbongo name and philosophy...' },
+    ];
+
+    function renderPosts(filteredPosts) {
+      const blogList = document.getElementById('blog-list');
+      
+      // Group by year
+      const grouped = {};
+      filteredPosts.forEach(post => {
+        if (!grouped[post.year]) grouped[post.year] = [];
+        grouped[post.year].push(post);
+      });
+      
+      // Render
+      blogList.innerHTML = '';
+      Object.keys(grouped).sort().reverse().forEach(year => {
+        const yearDiv = document.createElement('div');
+        yearDiv.className = 'year-group';
+        yearDiv.innerHTML = `<h2 class="year-header">${year}</h2>`;
+        
+        grouped[year].forEach(post => {
+          const filename = post.date + '-' + post.title.toLowerCase().replace(/[^\w\s-]/g, '').replace(/\s+/g, '-');
+          const card = document.createElement('div');
+          card.className = 'blog-card';
+          card.innerHTML = `
+            <div class="blog-meta">${post.date}</div>
+            <h3 class="blog-title">${post.title}</h3>
+            <p class="blog-excerpt">${post.excerpt}</p>
+            <a class="blog-link" href="blog/posts/${filename}.md" target="_blank">Read Post →</a>
+          `;
+          yearDiv.appendChild(card);
+        });
+        
+        blogList.appendChild(yearDiv);
+      });
+    }
+
+    function filterYear(year) {
+      // Update active tab
+      document.querySelectorAll('.filter-tab').forEach(tab => {
+        tab.classList.remove('active');
+      });
+      event.target.classList.add('active');
+      
+      // Filter posts
+      const filtered = year === 'all' ? posts : posts.filter(p => p.year === year);
+      renderPosts(filtered);
+    }
+
+    // Initial render
+    renderPosts(posts);
+  </script>
+</body>
+</html>
