@@ -1,0 +1,28 @@
+---
+title: "Building the new economy"
+date: 2011-08-01
+author: Baba John
+type: blog-post
+source: WordPress Archive
+status: archived
+tags: #archive-2011, #legacy-blog, #adbongo
+aliases: []
+---
+
+
+> [!info] Legacy Content
+> Originally published 2011-08-01 on the Adbongo WordPress blog. Part of the 2010-2012 archive.
+> Topics: [[Sustainability]] · [[Business]] · [[Marketing]]
+
+[gallery]  R.L. Turner will be opening an academy for students interested in Executive Leadership and Financial Services (marketing/advertising).  Since you have been such a valued member of our Chamber and community… you have been selected as One of the Top 20 businesses to help guide our Teachers in the development of this program!  The teachers will be available on Wednesday, August 10, 2011 between the hours of 12:00-2:00 pm.  Would you be open to a 30-minute interview at your office with a teacher to discuss: -What skills are employers/managers seeking in their job candidates? -What classes would be beneficial for our students as they prepare for the business world?-What are some areas of development that require improvement? -Your special insight in your area of expertise.  The interview slots are available as follows…  Please designate the timeframes in which you would be available on Wed. August 10th:  12:00-12:30 pm _____ 12:30 – 1:00 pm _____1:00 – 1:30 pm  _____ 1:30 – 2:00 pm  _____ As always, we appreciate your support of our community and students.  Best always,Anne **** **Anne Acuna** **Director****Farmers Branch Chamber of Commerce One Medical Parkway – Suite 104****Farmers Branch, TX  75234** **(972) 243-8966  x23** **[aacuna@fbchamber.com](mailto:aacuna@fbchamber.com)** ** ** ** ![](http://adbongo.files.wordpress.com/2011/08/image004.jpg?w=125)  **  ![](http://adbongo.files.wordpress.com/2011/08/veterans.png?w=280)
+
+
+
+---
+
+## Related Notes
+
+- [[Sustainability]]
+- [[Business]]
+- [[Marketing]]
+
