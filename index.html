@@ -1243,7 +1243,6 @@
               the Raid Guild–era maker was the earlier sandcastle.
             </p>
             <p style="margin-top:0.75rem;display:flex;flex-wrap:wrap;gap:0.5rem;">
-              <a class="btn btn-primary" href="/majeur.html">Launch Majeur DAO Interface →</a>
               <a class="btn btn-ghost" href="#daomaker">DAO Maker story →</a>
               <a class="btn btn-ghost" href="https://zfi.wei.is/dao" target="_blank" rel="noopener noreferrer">Summon on ZFI →</a>
               <a class="btn btn-ghost" href="/ecosystem-mapping.html">DAO mapping form →</a>
@@ -2265,6 +2264,19 @@
   </footer>
 
   <script>
+    // Close dropdown menus when links inside them are clicked
+    (function() {
+      document.addEventListener('DOMContentLoaded', function() {
+        document.querySelectorAll('.nav-drop-menu a').forEach(function(link) {
+          link.addEventListener('click', function() {
+            document.querySelectorAll('.nav-drop[open]').forEach(function(details) {
+              details.removeAttribute('open');
+            });
+          });
+        });
+      });
+    })();
+
     (function () {
       const $ = (id) => document.getElementById(id);
       const DEFAULT_FEED_ACCOUNT = "0x0063951De34a75c25279cFe3C212F4855125Fd8f";
