@@ -691,6 +691,22 @@
       display: flex; flex-wrap: wrap; gap: 0.5rem 0.85rem;
       font-family: var(--font-pixel); font-size: 0.5rem;
     }
+    .folio-item-wide { grid-column: 1 / -1; }
+    .folio-slides {
+      margin-top: 0.75rem;
+      border: 3px solid #000;
+      box-shadow: 3px 3px 0 var(--border);
+      line-height: 0;
+      aspect-ratio: 960 / 749;
+      background: #000;
+      max-width: 60rem;
+    }
+    .folio-slides iframe {
+      width: 100%;
+      height: 100%;
+      border: 0;
+      display: block;
+    }
     .testimonial-quote {
       font-style: normal; color: var(--text); font-size: 1.2rem;
     }
@@ -1191,6 +1207,14 @@
             <div class="timeline-year">2011</div>
             <div class="timeline-body">
               <strong>Certified B Corp</strong> by B Lab (CSRwire, Jan 2012).
+            </div>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-year">Oct 24, 2014</div>
+            <div class="timeline-body">
+              <strong>Austin Zero Waste / City of Austin talk</strong>—crypto as an incentive for reuse (Baba John, Resourcerer).
+              Later developed into a white paper.
+              <a href="#crypto-reuse-2014">View the presentation →</a>
             </div>
           </div>
           <div class="timeline-item">
@@ -1723,9 +1747,29 @@
         <div class="folio-category" id="advocacy">
           <h3>Advocacy · Zero Waste legislation</h3>
           <p>
-            Legacy Zero Waste Advocacy press and Capitol work—petitions, statewide goals, and TCEQ standards.
+            Legacy Zero Waste Advocacy press and Capitol work—petitions, statewide goals, and TCEQ standards—
+            plus the 2014 Austin pitch to use crypto to incentivize reuse.
           </p>
           <div class="folio-grid">
+            <article class="folio-item folio-item-wide" id="crypto-reuse-2014">
+              <h4>Crypto to incentivize reuse · Austin, Oct 24, 2014</h4>
+              <p class="folio-meta">
+                Presentation to the Zero Waste community / City of Austin conference—
+                Baba John, Resourcerer. Pitch: use crypto to reward reuse.
+                This deck led into a later white paper.
+              </p>
+              <div class="folio-slides">
+                <iframe
+                  src="https://docs.google.com/presentation/d/e/2PACX-1vTxwzd32iboMggrS7108Mns4VBHwBGxuUf3VqHc2R_ip9RxssdRwecahGLNbTzAttsalnc9Ez18gfl1/pubembed?start=false&amp;loop=false&amp;delayms=3000"
+                  title="Austin presentation — crypto to incentivize reuse, Oct 24, 2014"
+                  allowfullscreen
+                  loading="lazy"
+                ></iframe>
+              </div>
+              <p class="folio-links">
+                <a href="https://docs.google.com/presentation/d/e/2PACX-1vTxwzd32iboMggrS7108Mns4VBHwBGxuUf3VqHc2R_ip9RxssdRwecahGLNbTzAttsalnc9Ez18gfl1/pub?start=false&amp;loop=false&amp;delayms=3000" target="_blank" rel="noopener noreferrer">Open full slides →</a>
+              </p>
+            </article>
             <article class="folio-item">
               <h4>Local Advocacy Group Petitions Texas State House</h4>
               <p class="folio-meta">
@@ -1886,11 +1930,13 @@
             <h3>Zero Waste Business Accelerator</h3>
             <p>
               Adbongo’s accelerator for regenerative and zero-waste enterprises—strategy, branding, and market development.
-              Legacy proof: <strong>2nd place</strong> at the Collidathon IoT hackathon with a smart-dumpster / sensor MVP
+              Legacy proof: <strong>Oct 24, 2014</strong> Austin talk on crypto to incentivize reuse,
+              and <strong>2nd place</strong> at the Collidathon IoT hackathon with a smart-dumpster / sensor MVP
               (Zero Waste Advocacy · Zero Waste beta).
             </p>
             <p style="margin-top:0.75rem;display:flex;flex-wrap:wrap;gap:0.5rem;">
-              <a class="btn btn-primary" href="https://www.theserverside.com/blog/Coffee-Talk-Java-News-Stories-and-Opinions/How-to-win-at-an-IoT-hackathon" target="_blank" rel="noopener noreferrer">IoT hackathon article →</a>
+              <a class="btn btn-primary" href="#crypto-reuse-2014">2014 Austin slides →</a>
+              <a class="btn btn-ghost" href="https://www.theserverside.com/blog/Coffee-Talk-Java-News-Stories-and-Opinions/How-to-win-at-an-IoT-hackathon" target="_blank" rel="noopener noreferrer">IoT hackathon article →</a>
               <a class="btn btn-ghost" href="/accelerator.html">Start accelerator agreement →</a>
             </p>
           </article>
