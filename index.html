@@ -17,12 +17,12 @@
       --surface-2: #8bac0f;
       --border: #9bbc0f;
       --text: #e0f8d0;
-      --muted: #9bbc0f;
+      --muted: #c8e4a8;
       --primary: #9bbc0f;
       --primary-dim: #8bac0f;
       --leaf: #8bac0f;
       --leaf-soft: #306230;
-      --accent: #f7d51d;
+      --accent: #ff8c42;
       --cta: #e40058;
       --cta-hover: #c41e6a;
       --max: 72rem;
@@ -310,14 +310,28 @@
       overflow: hidden;
       border-bottom: 4px solid #000;
       background:
-        linear-gradient(180deg, rgba(15, 56, 15, 0.35), rgba(10, 42, 10, 0.55)),
+        linear-gradient(180deg, rgba(15, 56, 15, 0.75), rgba(10, 42, 10, 0.85)),
         url("/assets/brand/leaf-pattern.jpg");
-      background-size: auto, 200px auto;
+      background-size: auto, 300px auto;
       background-repeat: repeat;
+      background-blend-mode: overlay;
+      opacity: 1;
+    }
+    .hero::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: rgba(15, 56, 15, 0.5);
+      pointer-events: none;
     }
     .hero-leaves { display: none; }
     .butterflies { display: none; }
     .hero .wrap {
+      position: relative;
+      z-index: 1;
       display: flex;
       flex-direction: column;
       align-items: center;
