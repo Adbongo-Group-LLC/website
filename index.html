@@ -419,6 +419,42 @@
     @media (min-width: 980px) {
       #testimonials .cards { grid-template-columns: repeat(3, 1fr); }
     }
+    #testimonials .testimonials-sub {
+      font-family: var(--font-pixel);
+      font-size: 0.72rem;
+      line-height: 1.45;
+      color: #fff;
+      text-shadow: 2px 2px 0 #000;
+      margin: 1.75rem auto 0;
+      width: 100%;
+      max-width: 72rem;
+    }
+    #testimonials .testimonial-letters {
+      grid-template-columns: 1fr;
+    }
+    @media (min-width: 900px) {
+      #testimonials .testimonial-letters { grid-template-columns: repeat(2, 1fr); }
+    }
+    #testimonials .testimonial-notes {
+      grid-template-columns: 1fr;
+    }
+    @media (min-width: 700px) {
+      #testimonials .testimonial-notes { grid-template-columns: repeat(2, 1fr); }
+    }
+    .testimonial-letter {
+      margin-top: 0.75rem;
+    }
+    .testimonial-letter a { display: block; }
+    .testimonial-letter img {
+      width: 100%;
+      height: auto;
+      display: block;
+      border: 3px solid #000;
+      box-shadow: 3px 3px 0 var(--border);
+      image-rendering: auto;
+      background: #fff;
+    }
+    #testimonials .card .folio-links { margin-top: 0.75rem; }
     section > .wrap {
       display: flex;
       flex-direction: column;
@@ -1823,7 +1859,7 @@
           <h3>Event production &amp; marketing</h3>
           <p>Event systems, land-based enterprise launches, and regenerative business development.</p>
           <div class="folio-grid">
-            <article class="folio-item">
+            <article class="folio-item" id="folio-mesa-ranch">
               <h4>Mesa Ranch</h4>
               <p class="folio-meta">Client: Lane Ray · organic / regenerative business development &amp; event marketing</p>
               <p class="folio-viewer-hint">Scroll to view the work</p>
@@ -1831,6 +1867,7 @@
                 <p class="folio-viewer-status">Loading project…</p>
               </div>
               <p class="folio-links">
+                <a href="#letter-steve-ray">Steve Ray recommendation letter →</a>
                 <a href="https://www.behance.net/gallery/746149" target="_blank" rel="noopener noreferrer">Lane Ray / Mesa Ranch on Behance →</a>
               </p>
             </article>
@@ -1957,10 +1994,152 @@
       <div class="wrap">
         <h2 id="testimonials-heading">What clients &amp; partners say</h2>
         <p class="feed-meta" style="max-width:48rem;">
-          LinkedIn recommendations for Baba John / Adbongo — clients, collaborators, teammates, and partners.
-          Full profile:
+          Letters of recommendation, client notes, and LinkedIn recommendations for Baba John / Adbongo.
+          Source files live in
+          <a href="/assets/testimonials/">assets/testimonials</a>.
+          Full LinkedIn profile:
           <a href="https://www.linkedin.com/in/vibecoder" target="_blank" rel="noopener noreferrer">linkedin.com/in/vibecoder</a>
         </p>
+
+        <h3 class="testimonials-sub">Letters of recommendation</h3>
+        <div class="cards testimonial-letters">
+          <article class="card" id="letter-donnelly">
+            <h3>Margaret A. Donnelly</h3>
+            <p class="testimonial-meta">Donnelly &amp; Associates · Attorney and President · June 19, 2011 letter (<code>DonnellyPC.doc</code>) · Oct 27, 2008 letter</p>
+            <p class="testimonial-quote">“Adbongo, Inc. and Donnelly &amp; Associates entered into an agreement to accelerate the firm’s business in February, 2010. Since then, through June, 2011, the firm has experienced a thirty-three percent increase of client consultations per month and a five percent increase of client contracts per month in 2011. … What Adbongo, Inc. and John Bush have accomplished was to accelerate the firm into the 21st century while serving the immigrant community, hence our cause, Uniting Families.”</p>
+            <figure class="testimonial-letter">
+              <a href="/assets/testimonials/DonnellyPC-letter-2008.jpg">
+                <img src="/assets/testimonials/DonnellyPC-letter-2008.jpg" width="800" height="1035" alt="October 27, 2008 letter of recommendation from Margaret A. Donnelly, Donnelly &amp; Associates" loading="lazy" />
+              </a>
+            </figure>
+            <p class="folio-links">
+              <a href="/assets/testimonials/DonnellyPC.doc">Download DonnellyPC.doc (June 2011) →</a>
+              <a href="#testimonial-margaret-donnelly">LinkedIn recommendation →</a>
+            </p>
+          </article>
+          <article class="card" id="letter-golab">
+            <h3>Steve Golab</h3>
+            <p class="testimonial-meta">CEO, FG Squared · Founder, GoLab Austin · April 9, 2012 letter (<code>Golab.pdf</code>)</p>
+            <p class="testimonial-quote">“I have known and worked with Adbongo and their founder John Bush since 2007 when our firms bid together on a web site design and development project for the City of Austin. … Through John’s coaching and influence I was inspired to change GoLab from a traditional co-op into a small business incubator model that will help create new jobs and transform many lives.”</p>
+            <figure class="testimonial-letter">
+              <a href="/assets/testimonials/Golab.pdf">
+                <img src="/assets/testimonials/Golab-letter.jpg" width="800" height="1035" alt="April 9, 2012 letter of recommendation from Steve Golab, FG Squared and GoLab Austin" loading="lazy" />
+              </a>
+            </figure>
+            <p class="folio-links">
+              <a href="/assets/testimonials/Golab.pdf">Open Golab.pdf →</a>
+              <a href="#testimonial-steve-golab">LinkedIn recommendation →</a>
+            </p>
+          </article>
+          <article class="card" id="letter-gary-liss">
+            <h3>Gary Liss</h3>
+            <p class="testimonial-meta">Gary Liss &amp; Associates · December 21, 2014</p>
+            <p class="testimonial-quote">“John has advocated for Zero Waste in numerous cities, including Dallas and Fort Worth, TX; and communities in Northern California; Nevada; Arizona; Colorado; and Central America. … We have agreed that John and his Adbongo team will work with me on the development of Zero Waste Community Plans.”</p>
+            <figure class="testimonial-letter">
+              <a href="/assets/testimonials/gary-liss-2014.jpg">
+                <img src="/assets/testimonials/gary-liss-2014.jpg" width="800" height="1035" alt="December 21, 2014 letter of recommendation from Gary Liss" loading="lazy" />
+              </a>
+            </figure>
+          </article>
+          <article class="card" id="letter-steve-ray">
+            <h3>Steve E. Ray</h3>
+            <p class="testimonial-meta">Owner, Mesa Ranch Steakhouse · July 27, 2011</p>
+            <p class="testimonial-quote">“John and his staff at Adbongo got the ball rolling by hosting local community events and promoting our restaurant at local events. In March of 2009 they organized a Texas Independence Day celebration that drew over 300 guests. … We saw a significant increase in sales for the six months we utilized the talents of Adbongo.”</p>
+            <figure class="testimonial-letter">
+              <a href="/assets/testimonials/mesa-ranch-steve-ray-2011.jpg">
+                <img src="/assets/testimonials/mesa-ranch-steve-ray-2011.jpg" width="800" height="1035" alt="July 27, 2011 letter of recommendation from Steve E. Ray, Mesa Ranch Steakhouse" loading="lazy" />
+              </a>
+            </figure>
+            <p class="folio-links">
+              <a href="#folio-mesa-ranch">Mesa Ranch in the folio →</a>
+            </p>
+          </article>
+          <article class="card" id="letter-douglas-larue">
+            <h3>Douglas Edward LaRue</h3>
+            <p class="testimonial-meta">President, Glaze Studio</p>
+            <p class="testimonial-quote">“John Bush hired me director of photography, editor and consult on pre and post production of a series of 18 industrial videos and one tv commercial. I found John to be a highly motivated and motivating producer. … He is one of those rare individuals that actively seeks opportunities to swing for the fence.”</p>
+            <figure class="testimonial-letter">
+              <a href="/assets/testimonials/glaze-douglas-larue.jpg">
+                <img src="/assets/testimonials/glaze-douglas-larue.jpg" width="800" height="1035" alt="Letter of recommendation from Douglas Edward LaRue, Glaze Studio" loading="lazy" />
+              </a>
+            </figure>
+            <p class="folio-links">
+              <a href="#testimonial-doug-larue">LinkedIn recommendation →</a>
+            </p>
+          </article>
+          <article class="card" id="letter-jason-hawkins">
+            <h3>Jason A. Hawkins</h3>
+            <p class="testimonial-meta">Staff Sergeant, USMC · January 23, 2003</p>
+            <p class="testimonial-quote">“As his Platoon Sergeant, I could always count on Sergeant Bush to accomplish any mission. He is an outstanding leader and was an essential member to our unit. Sergeant Bush always set the example, and worked continuously to better himself and his team.”</p>
+            <figure class="testimonial-letter">
+              <a href="/assets/testimonials/jason-hawkins-usmc-2003.jpg">
+                <img src="/assets/testimonials/jason-hawkins-usmc-2003.jpg" width="800" height="1035" alt="January 23, 2003 letter of recommendation from Staff Sergeant Jason A. Hawkins, USMC" loading="lazy" />
+              </a>
+            </figure>
+          </article>
+        </div>
+
+        <h3 class="testimonials-sub">Client notes</h3>
+        <div class="cards testimonial-notes">
+          <article class="card">
+            <h3>Tajana Mesic</h3>
+            <p class="testimonial-meta">GGG Sustainability Solutions · Strategic Consulting</p>
+            <p class="testimonial-quote">“John’s team helped GGG accelerate our business offerings. We enjoyed working with John and his team and would rely on them again.”</p>
+            <figure class="testimonial-letter">
+              <img src="/assets/testimonials/tajana-mesic-ggg.png" width="540" height="200" alt="Quote from Tajana Mesic, GGG Sustainability Solutions" loading="lazy" />
+            </figure>
+          </article>
+          <article class="card">
+            <h3>Texas Campaign for the Environment</h3>
+            <p class="testimonial-meta">Public thank-you after a Dallas Zero Waste workshop</p>
+            <p class="testimonial-quote">“Thanks, John! Gary’s Zero Waste workshop in Dallas was excellent.”</p>
+            <figure class="testimonial-letter">
+              <img src="/assets/testimonials/texas-campaign-for-the-environment.png" width="640" height="90" alt="Texas Campaign for the Environment thank-you note" loading="lazy" />
+            </figure>
+          </article>
+          <article class="card">
+            <h3>Sara Salzman</h3>
+            <p class="testimonial-meta">Client note</p>
+            <p class="testimonial-quote">“Yyyaayy!!! Thank you :) looks gorgeous!!! When can I pick it up?!”</p>
+            <figure class="testimonial-letter">
+              <img src="/assets/testimonials/sara-salzman.png" width="640" height="90" alt="Sara Salzman comment thanking John for a finished piece" loading="lazy" />
+            </figure>
+          </article>
+          <article class="card">
+            <h3>Kevin Mathis</h3>
+            <p class="testimonial-meta">Community note</p>
+            <p class="testimonial-quote">“How are you doing my friend—I hope things are well—keep me on your mailing list so im updated on your events and the events of your partners—I luv the vibe”</p>
+            <figure class="testimonial-letter">
+              <img src="/assets/testimonials/kevin-mathis.png" width="640" height="110" alt="Kevin Mathis comment about staying on the mailing list" loading="lazy" />
+            </figure>
+          </article>
+          <article class="card">
+            <h3>Marjeanne Rutt</h3>
+            <p class="testimonial-meta">Permaculture / Phase 1 garden note</p>
+            <p class="testimonial-quote">“I most certainly would! I am taking advantage of my Phase 1 this season and have planted veggies. With the wonderful rain we have been getting this spring in Austin, they are well on their way!”</p>
+            <figure class="testimonial-letter">
+              <img src="/assets/testimonials/marjeanne-rutt.png" width="640" height="90" alt="Marjeanne Rutt comment about planting veggies in Austin" loading="lazy" />
+            </figure>
+          </article>
+          <article class="card">
+            <h3>Sam Monreal</h3>
+            <p class="testimonial-meta">Permaculture note</p>
+            <p class="testimonial-quote">“It’s been great to not only control the intermittent flooding that I had through permaculture, but teaching my daughter about growing our own food has been great. Pomegranate trees, kale, lettuce, beans. Lots of new plants starting to grow this spring.”</p>
+            <figure class="testimonial-letter">
+              <img src="/assets/testimonials/sam-monreal.png" width="640" height="90" alt="Sam Monreal comment about permaculture and growing food" loading="lazy" />
+            </figure>
+          </article>
+          <article class="card">
+            <h3>Sunni Owen Edwards</h3>
+            <p class="testimonial-meta">Client note</p>
+            <p class="testimonial-quote">“Thanks, Baba Bushe!!!! Matt hasn’t stopped talking about that painting since he bought it. He loves it!! Tomorrow is a full day of meetings, so I’m sure many of their builders/clients will see it.”</p>
+            <figure class="testimonial-letter">
+              <img src="/assets/testimonials/sunni-owen-edwards.png" width="640" height="90" alt="Sunni Owen Edwards comment about a painting purchase" loading="lazy" />
+            </figure>
+          </article>
+        </div>
+
+        <h3 class="testimonials-sub">LinkedIn recommendations</h3>
         <div class="cards">
           <article class="card">
             <h3>Jake Perry</h3>
@@ -1996,6 +2175,9 @@
             <h3>Margaret Donnelly</h3>
             <p class="testimonial-meta">Immigration lawyer &amp; author · May 25, 2010 · Client</p>
             <p class="testimonial-quote">“I've been using the services of Adbongo for several years, for web development, book design, and what is its forte, business development. We're going through an exciting developmental phase with research, strategic planning, and a focus of changing the world that is sober, creative, and extremely exciting. I highly recommend this new approach to assisting business owners make a difference in their community.”</p>
+            <p class="folio-links">
+              <a href="#letter-donnelly">Letters (DonnellyPC.doc + 2008) →</a>
+            </p>
           </article>
           <article class="card">
             <h3>Darren Minke</h3>
@@ -2032,10 +2214,13 @@
             <p class="testimonial-meta">VP Marketing, Salons by JC · Feb 5, 2009 · Same team</p>
             <p class="testimonial-quote">“John is one of the most creative people I know, who brings a fresh perspective and down to business results orientation, that's vital in today's struggling economy. His organization depicts everything an ad / marketing firm needs to be.”</p>
           </article>
-          <article class="card">
+          <article class="card" id="testimonial-steve-golab">
             <h3>Steve B. Golab</h3>
             <p class="testimonial-meta">The Resolver · Jan 21, 2009 · Different companies</p>
             <p class="testimonial-quote">“John is a class act with a great sense of humor, disciplined approach, and maturity to tackle complex challenges. I've seen John demonstrate leadership in very stressful situations, and I am very impressed with him. Also, he truly understands what it means to form a meaningful partnership. There is no doubt in my mind that time I have invested in building a relationship with John and the Adbongo team has paid off for my business, FG SQUARED Interactive Marketing.”</p>
+            <p class="folio-links">
+              <a href="#letter-golab">April 2012 letter (Golab.pdf) →</a>
+            </p>
           </article>
           <article class="card" id="testimonial-pat-dicicco">
             <h3>Pat Dicicco</h3>
@@ -2047,12 +2232,18 @@
             <p class="testimonial-meta">Television Producer · Aug 29, 2008 · Client</p>
             <p class="testimonial-quote">“John is one in a million. His knowledge and expertise coupled with amazing people skills sets him apart from those who I have worked with before. I have nothing but the best to say about John.”</p>
           </article>
-          <article class="card">
+          <article class="card" id="testimonial-doug-larue">
             <h3>Doug LaRue</h3>
             <p class="testimonial-meta">Sr. Creative, Producer, CEO · Aug 19, 2008 · Reported to John</p>
             <p class="testimonial-quote">“John is a highly energetic young man with a eclectic personality that demands to be the life of the party. He is not afraid of Grand Ideas or outside of the box thinking. He is a social networking monster with a long furry tail to swing from the tallest trees. He dances, he sings and he gets NOTICED! John is a motivator, he pushes people to succeed beyond expectations with the skill of a diplomat.”</p>
+            <p class="folio-links">
+              <a href="#letter-douglas-larue">Glaze Studio letter →</a>
+            </p>
           </article>
         </div>
+        <figure class="testimonial-letter" style="margin-top:1.5rem;max-width:40rem;width:100%;">
+          <img src="/assets/testimonials/linkedin-skills-endorsements.png" width="1024" height="700" alt="LinkedIn skills and endorsements for John, including advertising, entrepreneurship, social media, marketing, sustainability, and zero waste" loading="lazy" />
+        </figure>
         <p style="margin-top:1.25rem;">
           <a class="btn btn-primary" href="https://www.linkedin.com/in/vibecoder" target="_blank" rel="noopener noreferrer">View on LinkedIn →</a>
         </p>
